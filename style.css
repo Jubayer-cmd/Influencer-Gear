@@ -268,12 +268,7 @@ footer a {
   }
 
   .navigation li {
-    max-width: 100%;
-    margin: 1px;
-  }
-
-  .navigation li a {
-    font-size: 10px;
+    display: none;
   }
 
   .site-name h2 {
@@ -282,7 +277,7 @@ footer a {
   }
 
   .half-width-img {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
   .contact {
     width: 90%;
