@@ -1,0 +1,289 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* Common styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  margin: 30px 10px;
+}
+
+.navigation > ul {
+  display: flex;
+  align-items: center;
+}
+
+.navigation li {
+  list-style: none;
+  margin-right: 36px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+  padding: 15px 10px;
+  text-transform: uppercase;
+}
+
+.navigation li a:hover {
+  color: #e02c6d;
+}
+
+.site-name h2 {
+  font-weight: 700;
+  color: #3a3a3a;
+}
+
+.site-name h2:hover {
+  color: #e02c6d;
+  cursor: pointer;
+}
+
+.banner {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 130px;
+}
+
+.half-width-img img {
+  width: 100%;
+}
+
+.half-width {
+  margin-bottom: 100px;
+}
+
+.half-width h1 {
+  margin: 16px 0;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 70px;
+}
+.primary-button {
+  outline: 0;
+  margin: 16px 0;
+  border: 0;
+  padding: 10px 24px;
+  background-image: linear-gradient(90deg, #c21273, #ff008e);
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 41px;
+  cursor: pointer;
+  box-shadow: 0 7px 0 #a5075e;
+  position: relative;
+  top: 0;
+}
+.primary-button:active {
+  top: 5px;
+  box-shadow: 0 2px 0 #a5075e;
+}
+
+.company {
+  display: flex;
+  justify-content: center;
+}
+.company img {
+  margin: 10px;
+}
+
+.gap {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.p-container {
+  margin: 0 auto;
+  max-width: 1047px;
+}
+
+.p-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  grid-gap: 44px;
+}
+
+.product {
+  width: 329px;
+  height: 450px;
+  padding: 10px 15px;
+  background: #ffffff;
+  border: 1px solid #ff008e;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.fa-star {
+  font-size: 12px;
+}
+
+.fa-star.filled {
+  color: gold;
+}
+
+.fa-star.empty {
+  color: gray;
+}
+
+.see-button {
+  margin: 15px 0;
+  float: right;
+}
+
+.see-button a {
+  text-decoration: none;
+  color: #e02c6d;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-bottom: 100px;
+}
+
+.contacts {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.contacts h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.contact-left img {
+  max-width: 100%;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-field {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  font-family: inherit;
+  outline: 0;
+  border: 1px solid #ff008e;
+}
+footer {
+  max-width: 100%;
+  padding: 15px 25px;
+  color: white;
+  text-align: center;
+  background-color: #e02c6d;
+}
+
+footer a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  margin: 15px;
+}
+
+/* navbar */
+#nav-toggler {
+  display: none;
+}
+.nav-toggler-icon {
+  display: none;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* responsive css */
+@media only screen and (max-width: 992px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation ul li {
+    margin-right: 1px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .products,
+  .contact,
+  .banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .company {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company img {
+    margin-top: 30px;
+    width: 50%;
+  }
+
+  .navigation li {
+    max-width: 100%;
+    margin: 1px;
+  }
+
+  .navigation li a {
+    font-size: 10px;
+  }
+
+  .site-name h2 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .half-width-img {
+    margin-bottom: 100px;
+  }
+  .contact {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
